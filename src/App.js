@@ -1,13 +1,13 @@
 import './App.css';
-const emoji = require("emoji-dictionary");
+import bg_img from './assets/images/mt-15-bg.jpg';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <h1>Hola {emoji.getUnicode("wave")}</h1>
-      <h4>Glad to see you here! {emoji.getUnicode("heart_eyes")} {emoji.getUnicode("heart_eyes")}</h4>
-      <h6>We'll be ruling here soon.!!</h6>
+        <img src={bg_img} alt="bg image" style={{width:"100%", height:"100%"}}></img>
+        <h3 style={{position: 'fixed',left: '93px', top: '574px', fontFamily:'Cursive'}}>Hola from</h3>
+        <h1 style={{position: 'fixed',left: '93px', fontFamily:'Fantasy'}}>Malabar Yamaha</h1>
       </header>
     </div>
   );
